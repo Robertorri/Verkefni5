@@ -325,12 +325,13 @@ main a:hover {
   .boxes {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    row-gap: 50px;
+    grid-template-rows: auto;
+    
  
     margin-left: 20px;
     margin-right: 20px;
 
-    column-gap: calc(var(--gutter));
+    gap: calc(var(--gutter));
   }
   
   .boxes .box {
