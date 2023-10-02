@@ -191,20 +191,66 @@ main a:hover {
   /** Útfæra layout með grid **/
 
   @media screen and (max-width: 500px) {
-    .boxes .box {
+    .boxes {
       grid-column: span 12;
     }
   }
 
   @media screen and (min-width: 501px) and (max-width: 1000px) {
-    .boxes .box {
+    .boxes {
       grid-column: span 6;
     }
   }
 
   @media screen and (min-width: 1001px) and (max-width: 1400px) {
-    .boxes .box {
-      grid-column: span 6;
+    .boxes {
+      grid-column: span 3;
+    }
+  }
+
+  @media (min-width: 499px){
+    .foot-1 {
+      grid-column-end: span 6;
+    }
+    .offset-1 {
+      grid-column-start: 3;
+    }  
+    .foot-2 { 
+      grid-column-end: span 6;
+    }
+    .offset-2 {
+      grid-column-start: 3;
+    }
+  }
+  
+  @media (min-width: 500px){
+    .foot-1 {
+      grid-column-end: span 4;
+    }
+    .offset-1 {
+      grid-column-start: 3;
+    }  
+    .foot-2 { 
+      grid-column-end: span 4;
+      margin-right: 50%;
+    }
+    .offset-2 {
+      grid-column-start: 7;
+    }
+  }
+  
+  @media (min-width: 2000px){
+    .foot-1 {
+      grid-column-start: span 2;
+    }
+    .offset-1 {
+      grid-column-start: 4;
+    }  
+    .foot-2 { 
+      grid-column-end: span 2;
+    }
+    .offset-2 {
+      grid-column-start: 8;
     }
   }
   
